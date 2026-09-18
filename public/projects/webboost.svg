@@ -1,0 +1,28 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#121215"/>
+  <rect x="40" y="40" width="1120" height="595" rx="16" fill="#18181b" stroke="#27272a" stroke-width="1.5"/>
+  
+  <!-- Window Header -->
+  <line x1="40" y1="95" x2="1160" y2="95" stroke="#27272a" stroke-width="1.5"/>
+  <circle cx="75" cy="68" r="6" fill="#3f3f46"/>
+  <circle cx="100" cy="68" r="6" fill="#27272a"/>
+  <circle cx="125" cy="68" r="6" fill="#27272a"/>
+  
+  <!-- Performance Score Gauge Mockup -->
+  <circle cx="340" cy="340" r="100" fill="none" stroke="#27272a" stroke-width="14"/>
+  <circle cx="340" cy="340" r="100" fill="none" stroke="#ffffff" stroke-width="14" stroke-dasharray="480" stroke-dashoffset="60" stroke-linecap="round"/>
+  <text x="340" y="355" text-anchor="middle" font-family="monospace" font-size="44" font-weight="bold" fill="#ffffff">98</text>
+  <text x="340" y="390" text-anchor="middle" font-family="system-ui" font-size="14" fill="#a1a1aa">Lighthouse Score</text>
+
+  <!-- Metrics Breakdown -->
+  <rect x="520" y="160" width="560" height="80" rx="10" fill="#1f1f23" stroke="#27272a" stroke-width="1"/>
+  <text x="550" y="205" font-family="monospace" font-size="15" fill="#ffffff">LCP: 0.8s • FCP: 0.4s • CLS: 0.001</text>
+
+  <rect x="520" y="260" width="560" height="80" rx="10" fill="#1f1f23" stroke="#27272a" stroke-width="1"/>
+  <text x="550" y="305" font-family="monospace" font-size="15" fill="#ffffff">Strategy: Mobile &amp; Desktop Simulation</text>
+
+  <rect x="520" y="360" width="560" height="80" rx="10" fill="#1f1f23" stroke="#27272a" stroke-width="1"/>
+  <text x="550" y="405" font-family="monospace" font-size="15" fill="#ffffff">Audit Scope: Page &amp; Sitemap Multi-page</text>
+
+  <text x="600" y="540" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="22" fill="#71717a">Webboost — Lighthouse Performance Audit</text>
+</svg>

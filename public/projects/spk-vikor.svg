@@ -1,0 +1,27 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#121215"/>
+  <rect x="40" y="40" width="1120" height="595" rx="16" fill="#18181b" stroke="#27272a" stroke-width="1.5"/>
+  
+  <line x1="40" y1="95" x2="1160" y2="95" stroke="#27272a" stroke-width="1.5"/>
+  <circle cx="75" cy="68" r="6" fill="#3f3f46"/>
+  <circle cx="100" cy="68" r="6" fill="#27272a"/>
+  <circle cx="125" cy="68" r="6" fill="#27272a"/>
+  
+  <!-- VIKOR Formula & Bar Chart Mockup -->
+  <rect x="90" y="140" width="480" height="340" rx="12" fill="#1c1c20" stroke="#27272a" stroke-width="1"/>
+  <text x="120" y="180" font-family="monospace" font-size="14" fill="#ffffff">Metode VIKOR (VlseKriterijumska Optimizacija)</text>
+  <rect x="120" y="210" width="420" height="20" rx="4" fill="#27272a"/>
+  <rect x="120" y="245" width="360" height="15" rx="3" fill="#1f1f23"/>
+  <rect x="120" y="275" width="400" height="15" rx="3" fill="#1f1f23"/>
+  <text x="120" y="340" font-family="monospace" font-size="13" fill="#a1a1aa">Q_i = v*(S_i - S*) / (S- - S*) + ...</text>
+
+  <!-- Ranking Results Mockup -->
+  <rect x="610" y="140" width="500" height="340" rx="12" fill="#1c1c20" stroke="#27272a" stroke-width="1"/>
+  <text x="640" y="180" font-family="monospace" font-size="14" fill="#ffffff">Rekomendasi Jurusan Terbaik</text>
+  <rect x="640" y="210" width="440" height="40" rx="6" fill="#27272a"/>
+  <text x="660" y="235" font-family="monospace" font-size="12" fill="#ffffff">Rank 1: Teknik Informatika (Q: 0.082)</text>
+  <rect x="640" y="260" width="440" height="40" rx="6" fill="#1f1f23"/>
+  <text x="660" y="285" font-family="monospace" font-size="12" fill="#a1a1aa">Rank 2: Sistem Informasi (Q: 0.145)</text>
+
+  <text x="600" y="540" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="22" fill="#71717a">SPK Rekomendasi Jurusan Kuliah — VIKOR</text>
+</svg>

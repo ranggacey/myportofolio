@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "title": "Webboost (Cikweb)",
+    "description": "Aplikasi berbasis web untuk menguji performa dan SEO teknis website secara otomatis menggunakan Google Lighthouse dan Puppeteer. Menampilkan skor Core Web Vitals (LCP, CLS, INP) dengan simulasi mobile & desktop serta rekomendasi perbaikannya.",
+    "image": "/projects/webboost.svg",
+    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Lighthouse", "Puppeteer"],
+    "github": "https://github.com/ranggacey/webboost",
+    "live": ""
+  },
+  {
+    "id": "2",
+    "title": "Sistem Presensi Magang BRIDA Kota Semarang",
+    "description": "Sistem absensi berbasis web yang dibangun saat magang di Badan Riset dan Inovasi Daerah Kota Semarang. Berfungsi mencatat kehadiran peserta magang secara real-time dan memudahkan admin instansi dalam rekapitulasi data bulanan.",
+    "image": "/projects/brida-presensi.svg",
+    "tags": ["PHP / Laravel", "MySQL", "Bootstrap", "Sistem Informasi"],
+    "github": "https://github.com/ranggacey",
+    "live": ""
+  },
+  {
+    "id": "3",
+    "title": "SPK Rekomendasi Jurusan Kuliah (VIKOR)",
+    "description": "Aplikasi Sistem Pendukung Keputusan yang membantu calon mahasiswa memilih jurusan kuliah yang paling sesuai berdasarkan minat, bakat, dan nilai akademik menggunakan metode perankingan kompromi VIKOR.",
+    "image": "/projects/spk-vikor.svg",
+    "tags": ["Sistem Pendukung Keputusan", "Algoritma VIKOR", "Web App"],
+    "github": "https://github.com/ranggacey",
+    "live": ""
+  },
+  {
+    "id": "4",
+    "title": "Freshmart — Platform Pasar Tani",
+    "description": "Perancangan UI/UX dan prototipe platform jual beli langsung antara petani lokal dan konsumen rumah tangga untuk memperpendek jalur distribusi dan menjaga stabilitas harga hasil panen.",
+    "image": "/projects/freshmart.svg",
+    "tags": ["UI/UX Design", "Figma", "Design Thinking", "Web App"],
+    "github": "https://github.com/ranggacey",
+    "live": ""
+  }
+]

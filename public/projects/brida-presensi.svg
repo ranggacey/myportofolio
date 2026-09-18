@@ -1,0 +1,29 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#121215"/>
+  <rect x="40" y="40" width="1120" height="595" rx="16" fill="#18181b" stroke="#27272a" stroke-width="1.5"/>
+  
+  <line x1="40" y1="95" x2="1160" y2="95" stroke="#27272a" stroke-width="1.5"/>
+  <circle cx="75" cy="68" r="6" fill="#3f3f46"/>
+  <circle cx="100" cy="68" r="6" fill="#27272a"/>
+  <circle cx="125" cy="68" r="6" fill="#27272a"/>
+  
+  <!-- Presensi Table Mockup -->
+  <rect x="90" y="140" width="1020" height="50" rx="8" fill="#27272a"/>
+  <text x="120" y="172" font-family="monospace" font-size="14" fill="#ffffff">Nama Peserta Magang</text>
+  <text x="450" y="172" font-family="monospace" font-size="14" fill="#ffffff">Waktu Check-in</text>
+  <text x="750" y="172" font-family="monospace" font-size="14" fill="#ffffff">Status Kehadiran</text>
+
+  <rect x="90" y="210" width="1020" height="50" rx="8" fill="#1f1f23"/>
+  <text x="120" y="242" font-family="system-ui" font-size="13" fill="#a1a1aa">Peserta Magang BRIDA 01</text>
+  <text x="450" y="242" font-family="monospace" font-size="13" fill="#a1a1aa">07:58:12 WIB</text>
+  <rect x="750" y="222" width="80" height="24" rx="4" fill="#27272a"/>
+  <text x="772" y="238" font-family="monospace" font-size="11" fill="#ffffff">Hadir</text>
+
+  <rect x="90" y="280" width="1020" height="50" rx="8" fill="#1f1f23"/>
+  <text x="120" y="312" font-family="system-ui" font-size="13" fill="#a1a1aa">Peserta Magang BRIDA 02</text>
+  <text x="450" y="312" font-family="monospace" font-size="13" fill="#a1a1aa">08:02:45 WIB</text>
+  <rect x="750" y="292" width="80" height="24" rx="4" fill="#27272a"/>
+  <text x="772" y="308" font-family="monospace" font-size="11" fill="#ffffff">Hadir</text>
+
+  <text x="600" y="470" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="22" fill="#71717a">Sistem Presensi Online BRIDA Kota Semarang</text>
+</svg>

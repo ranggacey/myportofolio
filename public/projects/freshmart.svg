@@ -1,0 +1,19 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#121215"/>
+  <rect x="40" y="40" width="1120" height="595" rx="16" fill="#18181b" stroke="#27272a" stroke-width="1.5"/>
+  
+  <line x1="40" y1="95" x2="1160" y2="95" stroke="#27272a" stroke-width="1.5"/>
+  <circle cx="75" cy="68" r="6" fill="#3f3f46"/>
+  <circle cx="100" cy="68" r="6" fill="#27272a"/>
+  <circle cx="125" cy="68" r="6" fill="#27272a"/>
+  
+  <!-- Marketplace Grid Mockup -->
+  <rect x="80" y="140" width="1040" height="70" rx="10" fill="#1c1c20" stroke="#27272a" stroke-width="1"/>
+  <text x="110" y="180" font-family="system-ui" font-size="16" fill="#ffffff">Freshmart — Menghubungkan Petani Lokal Langsung ke Konsumen</text>
+
+  <rect x="80" y="240" width="320" height="230" rx="10" fill="#1c1c20" stroke="#27272a" stroke-width="1"/>
+  <rect x="440" y="240" width="320" height="230" rx="10" fill="#1c1c20" stroke="#27272a" stroke-width="1"/>
+  <rect x="800" y="240" width="320" height="230" rx="10" fill="#1c1c20" stroke="#27272a" stroke-width="1"/>
+
+  <text x="600" y="540" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="22" fill="#71717a">Freshmart Platform — Petani Lokal &amp; Distribusi Pangan</text>
+</svg>
