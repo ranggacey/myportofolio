@@ -8,7 +8,7 @@ const socialLinks = [
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com",
+    href: "http://linkedin.com/in/rangga-figo-hidayat-861b74332/",
     label: "LinkedIn Profile",
   },
   {
@@ -20,17 +20,17 @@ const socialLinks = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-20 md:py-28 px-6 border-t border-zinc-900">
+    <section id="contact" className="relative py-20 md:py-28 px-6 border-t border-[#D8A2A2]/30">
       <div className="max-w-4xl mx-auto">
         <ScrollReveal>
           <div className="mb-12">
-            <span className="text-xs font-mono uppercase tracking-widest text-zinc-500 block mb-2">
+            <span className="text-xs font-mono uppercase tracking-widest text-[#8EA66B] font-semibold block mb-2">
               Kontak
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white tracking-tight mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#242220] tracking-tight mb-4">
               Mari terhubung dan berdiskusi.
             </h2>
-            <p className="text-zinc-400 text-sm sm:text-base max-w-xl leading-relaxed">
+            <p className="text-[#524C48] text-sm sm:text-base max-w-xl leading-relaxed">
               Tertarik merekrut, mengajak kolaborasi project, atau sekadar ingin tanya-tanya? 
               Pintu komunikasi saya selalu terbuka.
             </p>
@@ -41,7 +41,7 @@ export default function Contact() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-14">
             <a
               href="mailto:ranggafigohidayat@gmail.com"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium bg-white text-black hover:bg-zinc-200 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold bg-[#8EA66B] text-white hover:bg-[#7B945A] shadow-md shadow-[#8EA66B]/25 transition-all cursor-pointer"
             >
               <span>Kirim Email Langsung</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -61,7 +61,7 @@ export default function Contact() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2.5 text-xs font-mono text-zinc-400 hover:text-white bg-zinc-900 border border-zinc-800 rounded-full hover:border-zinc-700 transition-colors"
+                  className="px-4 py-2.5 text-xs font-mono text-[#524C48] hover:text-[#242220] bg-white/90 border border-[#D8A2A2]/60 rounded-full hover:border-[#8EA66B] hover:bg-[#FFDCDC]/40 transition-all shadow-xs cursor-pointer"
                 >
                   {item.name}
                 </a>
@@ -71,7 +71,7 @@ export default function Contact() {
         </ScrollReveal>
 
         {/* Minimal Footer */}
-        <div className="pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-500">
+        <div className="pt-8 border-t border-[#D8A2A2]/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#7C756F]">
           <span>&copy; {new Date().getFullYear()} Rangga Figo Hidayat. Lulusan S1 Teknik Informatika USM.</span>
           <span>Semarang, Jawa Tengah</span>
         </div>

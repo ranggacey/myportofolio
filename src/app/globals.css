@@ -1,19 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --bg-primary: #09090b;
-  --bg-surface: #121215;
-  --bg-card: #18181b;
-  --bg-card-hover: #202024;
-  --border-subtle: #27272a;
-  --border-muted: #1f1f23;
+  --bg-primary: #FFF9D6;
+  --bg-surface: #FFFDF8;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FFF7F2;
+  --border-subtle: #E8BFBF;
+  --border-muted: #F2D5D5;
 
-  --text-primary: #ffffff;
-  --text-secondary: #a1a1aa;
-  --text-muted: #71717a;
+  --color-accent: #8EA66B;
+  --color-accent-hover: #7B945A;
+  --color-rose: #D8A2A2;
+  --color-blush: #FFDCDC;
+  --color-cream: #FFF9D6;
 
-  --gradient-text: linear-gradient(180deg, #ffffff 0%, #a1a1aa 100%);
-  --gradient-subtle: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+  --text-primary: #242220;
+  --text-secondary: #524C48;
+  --text-muted: #7C756F;
+
+  --gradient-text: linear-gradient(180deg, #242220 0%, #524C48 100%);
+  --gradient-subtle: linear-gradient(180deg, rgba(216, 162, 162, 0.15) 0%, rgba(216, 162, 162, 0) 100%);
 
   --font-sans: var(--font-space-grotesk), system-ui, -apple-system, sans-serif;
   --font-mono: var(--font-geist-mono), monospace;
@@ -30,6 +36,11 @@
   --color-card-hover: var(--bg-card-hover);
   --color-border-subtle: var(--border-subtle);
   --color-border-muted: var(--border-muted);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-rose: var(--color-rose);
+  --color-blush: var(--color-blush);
+  --color-cream: var(--color-cream);
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-text-muted: var(--text-muted);
@@ -54,8 +65,8 @@ body {
 }
 
 ::selection {
-  background: #ffffff;
-  color: #000000;
+  background: #8EA66B;
+  color: #FFFFFF;
 }
 
 /* =========================================
@@ -63,20 +74,20 @@ body {
    ========================================= */
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-primary);
+  background: #FFF9D6;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #27272a;
+  background: #D8A2A2;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3f3f46;
+  background: #8EA66B;
 }
 
 /* =========================================
@@ -84,24 +95,24 @@ body {
    ========================================= */
 
 .gradient-text {
-  background: linear-gradient(180deg, #ffffff 10%, #a1a1aa 100%);
+  background: linear-gradient(180deg, #242220 10%, #524C48 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .glass {
-  background: rgba(18, 18, 21, 0.75);
+  background: rgba(255, 253, 248, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(216, 162, 162, 0.4);
 }
 
 .glass-pill {
-  background: rgba(24, 24, 27, 0.85);
+  background: rgba(255, 249, 214, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(216, 162, 162, 0.45);
 }
 
 /* =========================================

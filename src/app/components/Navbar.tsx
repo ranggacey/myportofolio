@@ -51,8 +51,8 @@ export default function Navbar() {
         <nav
           className={`hidden md:flex items-center gap-1 px-3 py-1.5 rounded-full transition-all duration-300 ${
             scrolled
-              ? "glass-pill shadow-xl shadow-black/40"
-              : "bg-zinc-900/60 backdrop-blur-md border border-zinc-800/80"
+              ? "glass-pill shadow-lg shadow-[#D8A2A2]/20 border border-[#D8A2A2]/40"
+              : "bg-[#FFFDF8]/85 backdrop-blur-md border border-[#D8A2A2]/30 shadow-sm"
           }`}
         >
           <ul className="flex items-center gap-1">
@@ -62,10 +62,10 @@ export default function Navbar() {
                 <li key={link.label}>
                   <button
                     onClick={() => handleClick(link.href, link.label)}
-                    className={`relative px-4 py-1.5 text-xs uppercase tracking-wider font-medium rounded-full transition-all duration-200 cursor-pointer ${
+                    className={`relative px-4 py-1.5 text-xs uppercase tracking-wider font-semibold rounded-full transition-all duration-200 cursor-pointer ${
                       isActive
-                        ? "text-white bg-zinc-800"
-                        : "text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50"
+                        ? "text-white bg-[#8EA66B] shadow-sm shadow-[#8EA66B]/30"
+                        : "text-[#524C48] hover:text-[#242220] hover:bg-[#FFDCDC]/60"
                     }`}
                   >
                     {link.label}
@@ -81,23 +81,23 @@ export default function Navbar() {
           <div
             className={`w-full flex items-center justify-between px-4 py-2.5 rounded-full transition-all duration-300 ${
               scrolled || mobileOpen
-                ? "glass-pill shadow-xl shadow-black/50"
-                : "bg-zinc-900/80 backdrop-blur-md border border-zinc-800/80"
+                ? "glass-pill shadow-lg shadow-[#D8A2A2]/20 border border-[#D8A2A2]/40"
+                : "bg-[#FFFDF8]/90 backdrop-blur-md border border-[#D8A2A2]/35 shadow-sm"
             }`}
           >
             {/* Logo / Monogram */}
             <button
               onClick={() => handleClick("#home", "Home")}
-              className="text-xs font-semibold tracking-widest text-zinc-200 uppercase flex items-center gap-2 cursor-pointer"
+              className="text-xs font-bold tracking-widest text-[#242220] uppercase flex items-center gap-2 cursor-pointer"
             >
-              <span className="w-2 h-2 rounded-full bg-zinc-300" />
+              <span className="w-2.5 h-2.5 rounded-full bg-[#8EA66B]" />
               <span>Rangga Figo</span>
             </button>
 
             {/* Mobile Hamburger Button */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="p-1.5 text-zinc-300 hover:text-white transition-colors cursor-pointer rounded-lg"
+              className="p-1.5 text-[#524C48] hover:text-[#242220] transition-colors cursor-pointer rounded-lg"
               aria-label="Toggle Navigation Menu"
             >
               <div className="w-5 h-4 flex flex-col justify-between items-center">
@@ -122,7 +122,7 @@ export default function Navbar() {
 
           {/* Mobile Dropdown Panel */}
           {mobileOpen && (
-            <div className="w-full mt-2 p-2 rounded-2xl glass-pill shadow-2xl shadow-black border border-zinc-800 animate-in fade-in zoom-in-95 duration-200">
+            <div className="w-full mt-2 p-2 rounded-2xl glass-pill shadow-xl shadow-[#D8A2A2]/20 border border-[#D8A2A2]/40 animate-in fade-in zoom-in-95 duration-200">
               <ul className="flex flex-col gap-1">
                 {navLinks.map((link) => {
                   const isActive = active === link.label;
@@ -132,8 +132,8 @@ export default function Navbar() {
                         onClick={() => handleClick(link.href, link.label)}
                         className={`w-full text-left px-4 py-2.5 text-sm font-medium rounded-xl transition-colors cursor-pointer ${
                           isActive
-                            ? "text-white bg-zinc-800"
-                            : "text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/40"
+                            ? "text-white bg-[#8EA66B] shadow-sm shadow-[#8EA66B]/30"
+                            : "text-[#524C48] hover:text-[#242220] hover:bg-[#FFDCDC]/60"
                         }`}
                       >
                         {link.label}

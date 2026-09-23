@@ -40,7 +40,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="id"
       className={`${spaceGrotesk.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#09090b] text-zinc-100 selection:bg-white selection:text-black">
+      <body className="min-h-full flex flex-col bg-[#FFF9D6] text-[#242220] selection:bg-[#8EA66B] selection:text-white">
         {children}
       </body>
     </html>

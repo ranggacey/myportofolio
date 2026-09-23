@@ -18,9 +18,9 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
   return (
     <ScrollReveal delay={index * 100}>
-      <article className="group rounded-2xl overflow-hidden bg-zinc-900/40 border border-zinc-800/80 hover:border-zinc-700 transition-all duration-300 flex flex-col h-full">
+      <article className="group rounded-2xl overflow-hidden bg-white/90 border border-[#D8A2A2]/45 hover:border-[#8EA66B] shadow-xs hover:shadow-xl hover:shadow-[#D8A2A2]/20 transition-all duration-300 flex flex-col h-full">
         {/* Preview Image */}
-        <div className="relative aspect-video w-full overflow-hidden bg-zinc-950 border-b border-zinc-800/60">
+        <div className="relative aspect-video w-full overflow-hidden bg-[#FFF9D6]/40 border-b border-[#D8A2A2]/30">
           <Image
             src={project.image}
             alt={project.title}
@@ -34,12 +34,12 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         <div className="p-5 sm:p-6 flex flex-col flex-1 justify-between">
           <div>
             {/* Title */}
-            <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 tracking-tight group-hover:text-zinc-200 transition-colors">
+            <h3 className="text-lg sm:text-xl font-bold text-[#242220] mb-2 tracking-tight group-hover:text-[#8EA66B] transition-colors">
               {project.title}
             </h3>
 
             {/* Description */}
-            <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4 line-clamp-3">
+            <p className="text-[#524C48] text-xs sm:text-sm leading-relaxed mb-4 line-clamp-3">
               {project.description}
             </p>
 
@@ -48,7 +48,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               {project.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-2 py-0.5 text-[11px] font-mono text-zinc-300 bg-zinc-800/60 border border-zinc-700/40 rounded"
+                  className="px-2 py-0.5 text-[11px] font-mono text-[#3D3734] bg-[#FFDCDC]/60 border border-[#D8A2A2]/50 rounded"
                 >
                   {tag}
                 </span>
@@ -57,13 +57,13 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           </div>
 
           {/* Action Links */}
-          <div className="flex items-center gap-3 pt-2 border-t border-zinc-800/60">
+          <div className="flex items-center gap-3 pt-3 border-t border-[#D8A2A2]/30">
             {/* GitHub Link (Always displayed) */}
             <a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-3.5 py-2 text-xs font-medium rounded-lg bg-zinc-800/80 text-zinc-200 hover:text-white hover:bg-zinc-700 border border-zinc-700/60 transition-colors"
+              className="flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-lg bg-[#FFFDF8] text-[#242220] hover:text-[#8EA66B] hover:border-[#8EA66B] hover:bg-[#FFDCDC]/30 border border-[#D8A2A2]/70 transition-all cursor-pointer"
             >
               <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
@@ -77,7 +77,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                 href={project.live as string}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 px-3.5 py-2 text-xs font-medium rounded-lg bg-white text-black hover:bg-zinc-200 transition-colors"
+                className="flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold rounded-lg bg-[#8EA66B] text-white hover:bg-[#7B945A] shadow-sm shadow-[#8EA66B]/20 transition-all cursor-pointer"
               >
                 <span>Live Demo</span>
                 <svg
@@ -104,14 +104,14 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
 export default function Projects({ projects }: { projects: Project[] }) {
   return (
-    <section id="projects" className="relative py-20 md:py-28 px-6 border-t border-zinc-900">
+    <section id="projects" className="relative py-20 md:py-28 px-6 border-t border-[#D8A2A2]/30">
       <div className="max-w-4xl mx-auto">
         <ScrollReveal>
           <div className="mb-12">
-            <span className="text-xs font-mono uppercase tracking-widest text-zinc-500 block mb-2">
+            <span className="text-xs font-mono uppercase tracking-widest text-[#8EA66B] font-semibold block mb-2">
               Portofolio Proyek
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#242220] tracking-tight">
               Aplikasi dan sistem yang pernah saya bangun.
             </h2>
           </div>
