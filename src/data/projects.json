@@ -81,5 +81,19 @@
     ],
     "github": "https://github.com/ranggacey/UI-UX1",
     "live": "https://utara.ranggafigo.blog/"
+  },
+  {
+    "id": "7",
+    "title": "Lunar Music",
+    "description": "Landing page festival musik pop & pop punk Indonesia dengan alur pembelian tiket 3 langkah (data pembeli, pembayaran QRIS/VA/e-wallet/retail, kode booking), lineup artis, rundown, dan FAQ.",
+    "image": "/projects/lunar-music.svg",
+    "tags": [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Landing Page"
+    ],
+    "github": "https://github.com/ranggacey/restage",
+    "live": "https://restage.ranggafigo.blog/"
   }
 ]
