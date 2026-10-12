@@ -40,5 +40,18 @@
     ],
     "github": "https://github.com/ranggacey",
     "live": "https://kopisenja.ranggafigo.blog/"
+  },
+  {
+    "id": "4",
+    "title": "Jepret Studio",
+    "description": "Landing page untuk studio fotografi di Semarang dengan galeri karya, layanan, alur proses, daftar harga, FAQ, dan fitur booking jadwal.",
+    "image": "/projects/jepret-studio.svg",
+    "tags": [
+      "JavaScript",
+      "Tailwind CSS",
+      "Landing Page"
+    ],
+    "github": "https://github.com/ranggacey/jepret-studio",
+    "live": "https://jepretstudio.ranggafigo.blog/"
   }
 ]
