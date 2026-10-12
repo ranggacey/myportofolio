@@ -1,5 +1,24 @@
 import ScrollReveal from "./ScrollReveal";
 
+const marqueeTech = [
+  "Next.js",
+  "React",
+  "TypeScript",
+  "Tailwind CSS",
+  "JavaScript",
+  "PHP",
+  "Laravel",
+  "Node.js",
+  "PostgreSQL",
+  "MySQL",
+  "Prisma",
+  "REST API",
+  "Git",
+  "GitHub",
+  "Vercel",
+  "Figma",
+];
+
 const techCategories = [
   {
     title: "Frontend",
@@ -27,6 +46,20 @@ export default function TechStack() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#242220] tracking-tight">
               Teknologi yang biasa saya gunakan sehari-hari.
             </h2>
+          </div>
+        </ScrollReveal>
+
+        {/* Tech marquee */}
+        <ScrollReveal delay={80}>
+          <div className="tech-marquee mb-10 -mx-6 overflow-hidden" aria-hidden="true">
+            <div className="tech-marquee-track">
+              {[...marqueeTech, ...marqueeTech].map((tech, idx) => (
+                <span key={idx} className="tech-marquee-item">
+                  {tech}
+                  <span className="tech-marquee-sep">✦</span>
+                </span>
+              ))}
+            </div>
           </div>
         </ScrollReveal>
 
