@@ -53,5 +53,19 @@
     ],
     "github": "https://github.com/ranggacey/jepret-studio",
     "live": "https://jepretstudio.ranggafigo.blog/"
+  },
+  {
+    "id": "5",
+    "title": "Geser",
+    "description": "Papan Kanban realtime yang kalem dan elegan. Atur tugas dengan drag-and-drop, pantau progres sekilas, dan biarkan perubahan tersinkron otomatis.",
+    "image": "/projects/geser.svg",
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase"
+    ],
+    "github": "https://github.com/ranggacey/kanban",
+    "live": "https://kanban.ranggafigo.blog/"
   }
 ]
