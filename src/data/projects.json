@@ -26,5 +26,19 @@
     ],
     "github": "https://github.com/ranggacey",
     "live": ""
+  },
+  {
+    "id": "3",
+    "title": "Kopi Senja",
+    "description": "Landing page untuk kedai kopi dengan katalog menu, testimoni pelanggan, dan info kunjungan. Desain responsif dengan animasi scroll yang halus.",
+    "image": "/projects/kopi-senja.svg",
+    "tags": [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Landing Page"
+    ],
+    "github": "https://github.com/ranggacey",
+    "live": "https://kopisenja.ranggafigo.blog/"
   }
 ]
