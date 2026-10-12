@@ -67,5 +67,19 @@
     ],
     "github": "https://github.com/ranggacey/kanban",
     "live": "https://kanban.ranggafigo.blog/"
+  },
+  {
+    "id": "6",
+    "title": "Utara",
+    "description": "Prototype dashboard workspace dengan dua peran (user & admin): overview, proyek, progres, billing, direktori tim, dan analitik. Dibangun dengan Next.js dan Tailwind CSS.",
+    "image": "/projects/utara.svg",
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "UI/UX"
+    ],
+    "github": "https://github.com/ranggacey/UI-UX1",
+    "live": "https://utara.ranggafigo.blog/"
   }
 ]
