@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -15,6 +15,8 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState("Home");
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [menuMounted, setMenuMounted] = useState(false);
+  const closeTimer = useRef<number | null>(null);
 
   useEffect(() => {
     const onScroll = () => {
@@ -35,12 +37,32 @@ export default function Navbar() {
     };
 
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (closeTimer.current) window.clearTimeout(closeTimer.current);
+    };
   }, []);
+
+  const openMenu = () => {
+    if (closeTimer.current) window.clearTimeout(closeTimer.current);
+    setMenuMounted(true);
+    setMobileOpen(true);
+  };
+
+  const closeMenu = () => {
+    setMobileOpen(false);
+    if (closeTimer.current) window.clearTimeout(closeTimer.current);
+    closeTimer.current = window.setTimeout(() => setMenuMounted(false), 280);
+  };
+
+  const toggleMenu = () => {
+    if (mobileOpen) closeMenu();
+    else openMenu();
+  };
 
   const handleClick = (href: string, label: string) => {
     setActive(label);
-    setMobileOpen(false);
+    closeMenu();
     const el = document.querySelector(href);
     el?.scrollIntoView({ behavior: "smooth" });
   };
@@ -97,9 +119,10 @@ export default function Navbar() {
 
             {/* Mobile Hamburger Button */}
             <button
-              onClick={() => setMobileOpen(!mobileOpen)}
+              onClick={toggleMenu}
               className="p-1.5 text-[#524C48] hover:text-[#242220] transition-colors cursor-pointer rounded-lg"
               aria-label="Toggle Navigation Menu"
+              aria-expanded={mobileOpen}
             >
               <div className="w-5 h-4 flex flex-col justify-between items-center">
                 <span
@@ -121,14 +144,22 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Mobile Dropdown Panel */}
-          {mobileOpen && (
-            <div className="w-full mt-2 p-2 rounded-2xl glass-pill shadow-xl shadow-[#D8A2A2]/20 border border-[#D8A2A2]/40 animate-in fade-in zoom-in-95 duration-200">
+          {/* Mobile Dropdown Panel — unrolls like fabric */}
+          {menuMounted && (
+            <div
+              className={`mobile-menu w-full mt-2 p-2 rounded-2xl glass-pill shadow-xl shadow-[#D8A2A2]/20 border border-[#D8A2A2]/40 ${
+                mobileOpen ? "menu-open" : "menu-closing"
+              }`}
+            >
               <ul className="flex flex-col gap-1">
-                {navLinks.map((link) => {
+                {navLinks.map((link, idx) => {
                   const isActive = active === link.label;
                   return (
-                    <li key={link.label}>
+                    <li
+                      key={link.label}
+                      className="mobile-menu-item"
+                      style={{ animationDelay: mobileOpen ? `${0.06 + idx * 0.05}s` : "0s" }}
+                    >
                       <button
                         onClick={() => handleClick(link.href, link.label)}
                         className={`w-full text-left px-4 py-2.5 text-sm font-medium rounded-xl transition-colors cursor-pointer ${
