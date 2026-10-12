@@ -84,3 +84,7 @@ Animasi berlebihan, custom cursor, efek 3D, integrasi CMS, blog.
 ## Definisi selesai
 Build lolos, semua route ke-render, dark mode berfungsi, widget menjawab 8+ pertanyaan umum,
 semua link live valid, deploy Vercel READY, user dikabari via chat dengan ringkasan perubahan.
+
+## Catatan deploy 2026-10-12
+- GEMINI_API_KEY dipasang via Vercel env (sensitive, production). Redeploy diperlukan
+  agar env var terbaca serverless function /api/chat.
