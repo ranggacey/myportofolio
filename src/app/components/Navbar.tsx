@@ -92,7 +92,7 @@ export default function Navbar() {
               className="text-xs font-bold tracking-widest text-[#242220] uppercase flex items-center gap-2 cursor-pointer"
             >
               <span className="w-2.5 h-2.5 rounded-full bg-[#8EA66B]" />
-              <span>Rangga Figo</span>
+              <span>Rangga Figo Hidayat</span>
             </button>
 
             {/* Mobile Hamburger Button */}
